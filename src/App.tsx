@@ -15,6 +15,7 @@ import MatrixRain from './components/MatrixRain';
 import Scanlines from './components/Scanlines';
 import CircuitBoard from './components/CircuitBoard';
 import GlitchOverlay from './components/GlitchOverlay';
+import FlowingDivider from './components/FlowingDivider';
 
 function App() {
   return (
@@ -31,19 +32,25 @@ function App() {
         <NavigationBar />
         <Hero />
         <main>
+          <FlowingDivider direction="right" color="primary" />
           <FadeInSection>
             <About />
           </FadeInSection>
+          <FlowingDivider direction="left" color="secondary" />
           <FadeInSection>
             <Skills />
           </FadeInSection>
+          <FlowingDivider direction="right" color="accent" />
           <Projects />
+          <FlowingDivider direction="left" color="primary" />
           <FadeInSection>
             <Languages />
           </FadeInSection>
+          <FlowingDivider direction="right" color="secondary" />
           <FadeInSection>
             <Interests />
           </FadeInSection>
+          <FlowingDivider direction="left" color="accent" />
           <FadeInSection>
             <Contact />
           </FadeInSection>

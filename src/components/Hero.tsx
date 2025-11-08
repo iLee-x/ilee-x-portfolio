@@ -10,6 +10,18 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e] relative overflow-hidden">
+      {/* Flowing light borders */}
+      <div className="absolute top-0 left-0 right-0 h-1 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent shadow-neon-cyan animate-flow-right"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary to-transparent shadow-neon-magenta opacity-80 animate-flow-right-delayed"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent blur-sm opacity-50 animate-flow-right"></div>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 h-1 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent to-transparent shadow-neon-magenta animate-flow-left"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent shadow-neon-cyan opacity-80 animate-flow-left-delayed"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent blur-sm opacity-50 animate-flow-left"></div>
+      </div>
+
       <ParticleBackground />
 
       {/* Neon grid overlay */}
@@ -60,21 +72,30 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Stats display */}
+              {/* Stats display with flowing lights */}
               <div className="grid grid-cols-3 gap-4 py-4">
-                <div className="cyber-card p-4 text-center">
+                <div className="cyber-card p-4 text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-0.5 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent animate-flow-right"></div>
+                  </div>
                   <div className="text-2xl font-bold text-primary cyber-title">3+</div>
                   <div className="text-xs text-text/60 mono-text">
                     {language === 'en' ? 'YEARS' : language === 'fr' ? 'ANNÉES' : '年'}
                   </div>
                 </div>
-                <div className="cyber-card p-4 text-center">
+                <div className="cyber-card p-4 text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-0.5 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary to-transparent animate-flow-right"></div>
+                  </div>
                   <div className="text-2xl font-bold text-secondary cyber-title">20+</div>
                   <div className="text-xs text-text/60 mono-text">
                     {language === 'en' ? 'PROJECTS' : language === 'fr' ? 'PROJETS' : '项目'}
                   </div>
                 </div>
-                <div className="cyber-card p-4 text-center">
+                <div className="cyber-card p-4 text-center relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-0.5 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent to-transparent animate-flow-right"></div>
+                  </div>
                   <div className="text-2xl font-bold text-accent cyber-title">∞</div>
                   <div className="text-xs text-text/60 mono-text">
                     {language === 'en' ? 'IDEAS' : language === 'fr' ? 'IDÉES' : '想法'}

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npx serve -s build -l 3001)",
+      "Bash(npm start)",
+      "mcp__ide__getDiagnostics",
+      "Bash(lsof:*)",
+      "Bash(open:*)",
+      "Bash(curl:*)",
+      "Bash(kill:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run deploy:*)",
+      "Bash(git log:*)",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git reset:*)",
+      "Bash(gh repo edit:*)",
+      "Bash(gh repo view:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

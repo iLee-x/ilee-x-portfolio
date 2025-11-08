@@ -47,11 +47,13 @@ const NavigationBar = () => {
         ? 'bg-background/98 backdrop-blur-xl border-b-2 border-primary/40 shadow-[0_8px_32px_rgba(0,255,255,0.15)]'
         : 'bg-gradient-to-b from-background via-background/95 to-background/90 backdrop-blur-lg border-b border-primary/20'
     }`}>
-      {/* Top accent line with flowing light */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent overflow-hidden">
-        {/* Flowing light effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent opacity-80 animate-flow-right"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary/80 to-transparent opacity-60 animate-flow-right-delayed"></div>
+      {/* Top accent line with flowing light - Enhanced */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent overflow-hidden">
+        {/* Flowing light effect - More visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent shadow-neon-cyan animate-flow-right"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-secondary to-transparent shadow-neon-magenta opacity-80 animate-flow-right-delayed"></div>
+        {/* Glow layer */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent blur-sm opacity-50 animate-flow-right"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -198,13 +200,14 @@ const NavigationBar = () => {
       </div>
 
       {/* Bottom scanline effect - Enhanced with flowing light */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent"></div>
-        <div className="h-px bg-gradient-to-r from-primary/0 via-secondary/40 to-accent/0 blur-sm"></div>
-        {/* Flowing light on bottom border */}
-        <div className="absolute inset-0 h-px">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent opacity-80 animate-flow-left"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/80 to-transparent opacity-60 animate-flow-left-delayed"></div>
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden h-1">
+        <div className="h-full bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+        {/* Flowing light on bottom border - More visible */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent shadow-neon-cyan animate-flow-left"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent to-transparent shadow-neon-magenta opacity-80 animate-flow-left-delayed"></div>
+          {/* Glow layer */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent blur-sm opacity-50 animate-flow-left"></div>
         </div>
       </div>
 
