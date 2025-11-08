@@ -25,6 +25,10 @@ module.exports = {
         'glitch': 'glitch 3s infinite',
         'scan-line': 'scan-line 4s linear infinite',
         'float': 'float 6s ease-in-out infinite',
+        'flow-right': 'flow-right 3s ease-in-out infinite',
+        'flow-right-delayed': 'flow-right 3s ease-in-out infinite 1.5s',
+        'flow-left': 'flow-left 3s ease-in-out infinite',
+        'flow-left-delayed': 'flow-left 3s ease-in-out infinite 1.5s',
       },
       keyframes: {
         'text-breathing': {
@@ -54,6 +58,14 @@ module.exports = {
         'float': {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
+        },
+        'flow-right': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        'flow-left': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
       boxShadow: {
