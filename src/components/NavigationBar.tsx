@@ -41,13 +41,8 @@ const NavigationBar = () => {
             <div className="w-8 h-8 md:w-10 md:h-10 border-2 border-primary flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(0,255,255,0.5)] transition-shadow">
               <Terminal className="text-primary w-4 h-4 md:w-5 md:h-5" />
             </div>
-            <div>
-              <div className="text-lg md:text-xl font-black text-primary cyber-title glitch-text">
-                iLee-x
-              </div>
-              <div className="text-xs text-primary/40 mono-text hidden sm:block">
-                &gt; PORTFOLIO_v2.0
-              </div>
+            <div className="text-lg md:text-xl font-black text-primary cyber-title glitch-text">
+              iLee-x
             </div>
           </a>
 

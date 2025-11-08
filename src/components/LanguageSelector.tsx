@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Globe } from 'lucide-react';
 import { useLanguage, LanguageCode } from '../contexts/LanguageContext';
 
 const LanguageSelector = () => {
@@ -35,27 +34,26 @@ const LanguageSelector = () => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-surface transition-colors duration-200"
+        className="flex items-center justify-center px-2 py-2 sm:px-3 border border-primary/30 hover:border-primary/60 hover:shadow-[0_0_10px_rgba(0,255,255,0.3)] transition-all duration-200"
         aria-label="Select language"
       >
-        <Globe className="w-5 h-5" />
-        <span className="text-lg">{currentLanguage?.flag}</span>
+        <span className="text-lg sm:text-xl">{currentLanguage?.flag}</span>
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-background border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w-40 sm:w-48 bg-surface/95 backdrop-blur-md border-2 border-primary/30 shadow-[0_0_20px_rgba(0,255,255,0.2)] z-50 overflow-hidden">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
-              className={`w-full flex items-center gap-3 px-4 py-3 hover:bg-surface transition-colors duration-200 ${
-                language === lang.code ? 'bg-surface' : ''
+              className={`w-full flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 hover:bg-primary/10 transition-all duration-200 border-b border-primary/10 last:border-b-0 ${
+                language === lang.code ? 'bg-primary/20' : ''
               }`}
             >
-              <span className="text-xl">{lang.flag}</span>
-              <span className="text-sm font-medium">{lang.label}</span>
+              <span className="text-xl sm:text-2xl">{lang.flag}</span>
+              <span className="text-xs sm:text-sm font-medium text-text mono-text">{lang.label}</span>
               {language === lang.code && (
-                <span className="ml-auto text-primary">✓</span>
+                <span className="ml-auto text-primary text-sm">✓</span>
               )}
             </button>
           ))}
