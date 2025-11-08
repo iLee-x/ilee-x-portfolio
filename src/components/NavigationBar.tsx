@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Terminal, Code2, Zap } from 'lucide-react';
+import { Menu, X, Terminal, Code2 } from 'lucide-react';
 import LanguageSelector from './LanguageSelector';
 import { useLanguage } from '../contexts/LanguageContext';
 import { getTranslations } from '../translations/translations';
