@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       label: 'EMAIL',
-      url: 'mailto:your-email@example.com',
+      url: 'mailto:ilee-x@outlook.com',
       color: 'primary',
       command: '> send --type=email',
     },
