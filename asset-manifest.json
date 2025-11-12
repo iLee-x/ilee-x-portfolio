@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ilee-x-portfolio/static/css/main.d7babc0e.css",
-    "main.js": "/ilee-x-portfolio/static/js/main.895f8f52.js",
+    "main.js": "/ilee-x-portfolio/static/js/main.fa208004.js",
     "index.html": "/ilee-x-portfolio/index.html",
     "main.d7babc0e.css.map": "/ilee-x-portfolio/static/css/main.d7babc0e.css.map",
-    "main.895f8f52.js.map": "/ilee-x-portfolio/static/js/main.895f8f52.js.map"
+    "main.fa208004.js.map": "/ilee-x-portfolio/static/js/main.fa208004.js.map"
   },
   "entrypoints": [
     "static/css/main.d7babc0e.css",
-    "static/js/main.895f8f52.js"
+    "static/js/main.fa208004.js"
   ]
 }
