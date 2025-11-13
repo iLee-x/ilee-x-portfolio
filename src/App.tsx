@@ -16,6 +16,7 @@ import Scanlines from './components/Scanlines';
 import CircuitBoard from './components/CircuitBoard';
 import GlitchOverlay from './components/GlitchOverlay';
 import FlowingDivider from './components/FlowingDivider';
+import VisitorGlobe from './components/VisitorGlobe';
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
             <Interests />
           </FadeInSection>
           <FlowingDivider direction="left" color="accent" />
+          <FadeInSection>
+            <VisitorGlobe />
+          </FadeInSection>
+          <FlowingDivider direction="right" color="primary" />
           <FadeInSection>
             <Contact />
           </FadeInSection>

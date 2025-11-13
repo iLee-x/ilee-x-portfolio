@@ -16,7 +16,7 @@ const NavigationBar = () => {
       setScrolled(window.scrollY > 50);
 
       // Track active section
-      const sections = ['home', 'about', 'skills', 'projects', 'languages', 'interests', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'languages', 'interests', 'visitors', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -38,7 +38,8 @@ const NavigationBar = () => {
     { name: t.nav.projects, href: '#projects', code: '04', id: 'projects' },
     { name: t.nav.languages, href: '#languages', code: '05', id: 'languages' },
     { name: language === 'en' ? 'Interests' : language === 'fr' ? 'Intérêts' : '兴趣', href: '#interests', code: '06', id: 'interests' },
-    { name: t.nav.contact, href: '#contact', code: '07', id: 'contact' },
+    { name: t.nav.visitors, href: '#visitors', code: '07', id: 'visitors' },
+    { name: t.nav.contact, href: '#contact', code: '08', id: 'contact' },
   ];
 
   return (

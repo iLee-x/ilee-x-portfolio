@@ -7,6 +7,7 @@ export interface Translations {
     skills: string;
     languages: string;
     projects: string;
+    visitors: string;
     contact: string;
   };
   hero: {
@@ -51,6 +52,15 @@ export interface Translations {
     github: string;
     linkedin: string;
   };
+  visitorsMap?: {
+    title: string;
+    subtitle: string;
+    totalVisitors: string;
+    uniqueLocations: string;
+    totalVisits: string;
+    countries: string;
+    visitors: string;
+  };
 }
 
 export const translations: Record<LanguageCode, Translations> = {
@@ -61,6 +71,7 @@ export const translations: Record<LanguageCode, Translations> = {
       skills: 'Skills',
       languages: 'Languages',
       projects: 'Projects',
+      visitors: 'Visitors',
       contact: 'Contact',
     },
     hero: {
@@ -105,6 +116,15 @@ export const translations: Record<LanguageCode, Translations> = {
       github: 'GitHub',
       linkedin: 'LinkedIn',
     },
+    visitorsMap: {
+      title: 'Visitor Map',
+      subtitle: 'See where my portfolio visitors are from around the world',
+      totalVisitors: 'Total Visitors',
+      uniqueLocations: 'Unique Locations',
+      totalVisits: 'Total Visits',
+      countries: 'Countries',
+      visitors: 'visitors',
+    },
   },
   fr: {
     nav: {
@@ -113,6 +133,7 @@ export const translations: Record<LanguageCode, Translations> = {
       skills: 'Compétences',
       languages: 'Langues',
       projects: 'Projets',
+      visitors: 'Visiteurs',
       contact: 'Contact',
     },
     hero: {
@@ -157,6 +178,15 @@ export const translations: Record<LanguageCode, Translations> = {
       github: 'GitHub',
       linkedin: 'LinkedIn',
     },
+    visitorsMap: {
+      title: 'Carte des Visiteurs',
+      subtitle: 'Découvrez d\'où viennent les visiteurs de mon portfolio dans le monde',
+      totalVisitors: 'Total des Visiteurs',
+      uniqueLocations: 'Emplacements Uniques',
+      totalVisits: 'Visites Totales',
+      countries: 'Pays',
+      visitors: 'visiteurs',
+    },
   },
   zh: {
     nav: {
@@ -165,6 +195,7 @@ export const translations: Record<LanguageCode, Translations> = {
       skills: '技能',
       languages: '语言',
       projects: '项目',
+      visitors: '访客',
       contact: '联系',
     },
     hero: {
@@ -208,6 +239,15 @@ export const translations: Record<LanguageCode, Translations> = {
       location: '位置',
       github: 'GitHub',
       linkedin: 'LinkedIn',
+    },
+    visitorsMap: {
+      title: '访客地图',
+      subtitle: '查看我的作品集访客来自世界各地',
+      totalVisitors: '总访客数',
+      uniqueLocations: '独特位置',
+      totalVisits: '总访问量',
+      countries: '国家',
+      visitors: '访客',
     },
   },
 };
